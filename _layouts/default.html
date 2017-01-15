@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="row">
+      <div class="large-12 large-centered columns">
+
+        <header class="masthead">
+          <img src="{{ site.baseurl }}/public/profile.jpg" alt="Sido">
+        </header>
+
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="large-6 large-offset-3 columns">
+
+      <div class="content-section">
+
+        <p align="center">
+Sido is a store.
+        </p>  
+
+        <p align="center">
+Coming soon to 60 Yongkang Lu.
+        </p>  
+
+        <p align="center">
+<a href="mailto:info@si6do1.com?Subject=What%20is%20Sido?">info@si6do1.com</a>
+        </p>
+
+      </div>
+
+{% comment %}
+      <main>
+        <h2>Latest Work</h2>
+        {% for post in site.posts %}
+          <div class="project-post">
+            <h3><a href="{{ post.git }}">{{ post.title }}</a></h3>
+            {{ post.content }}
+          </div>
+        {% endfor %}
+      </main>
+{% endcomment %}
+
+      <footer>
+
+{% comment %}
+        <h2>Contact</h2>
+
+        <p>
+        Send us an <a href="mailto:info@si6do1.com?Subject=Hello,%20Sido!">email</a>, or follow us on <a href="https://twitter.com/si6do1">Twitter</a> or <a href="https://instagram.com/si6do1">Instagram</a>.
+        </p>
+{% endcomment %}
+
+        <p class="copyright">
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>.
+        </p>
+      </footer>
+
+    </div>
+
+    <div class="large-2 large-offset-1 columns social">
+      <ul>
+        <li><a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://instagram.com/{{ site.instagram }}"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    
+  </div>
+
+    {% if site.google_analytics %}
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+       ga('create', '{{ site.google_analytics }}', 'auto');
+       ga('send', 'pageview');
+     </script>
+    {% endif %}
+
+  </body>
+</html>

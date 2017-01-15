@@ -1,0 +1,36 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               Sido
+tagline:             Sido is a store.
+url:                 http://si6do1.com
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Sido
+  url:               https://twitter.com/si6do1
+  email:             info@si6do1.com
+
+# Custom vars
+version:             1.0.0
+github:
+  repo:              https://github.com/si6do1/si6do1.github.io
+google_analytics:    UA-90339999-1
+twitter:             si6do1
+github:              si6do1
+instagram:           si6do1
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist
