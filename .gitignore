@@ -17,6 +17,7 @@ bbin/
 coverage
 gh-pages/
 pkg/
+_site/
 site/_site/
 test/dest
 tmp/*
