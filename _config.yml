@@ -34,3 +34,5 @@ instagram:           si6do1
 gems:
   - jekyll-paginate
   - jekyll-gist
+
+theme: jekyll-theme-minimal
